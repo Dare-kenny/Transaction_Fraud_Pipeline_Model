@@ -1,0 +1,53 @@
+# ---- dependencies ----
+node_modules/
+.pnp/
+.pnp.js
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# ---- build output ----
+dist/
+build/
+*.tsbuildinfo
+
+# ---- environment / secrets ----
+# .env holds local, machine-specific values. Commit .env.example instead.
+.env
+.env.*
+!.env.example
+
+# ---- test & coverage ----
+coverage/
+.nyc_output/
+*.lcov
+junit.xml
+
+# ---- logs ----
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---- caches ----
+.npm/
+.eslintcache
+.cache/
+.temp/
+.tmp/
+
+# ---- editors / OS ----
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
